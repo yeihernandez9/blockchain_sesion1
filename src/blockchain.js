@@ -36,6 +36,13 @@ class Blockchain{
         }
         return true;
     }
+
+    getBlock(index){
+        if(index < 0 || index >= this.chain.length){
+            return false;
+        }
+      return this.chain[index];
+    }
 }
 
 module.exports = Blockchain;

@@ -10,3 +10,6 @@ myBlockchain.addBlock(new Block(5, "24/09/2024", {amount: 20}));
 
 console.log(JSON.stringify(myBlockchain, null, 4));
 console.log('Is Blockchain valid?' + myBlockchain.isChainValid());
+
+console.log(":::::::::::::::GET BLOCK:::::::::::::::::");
+console.log(myBlockchain.getBlock(5));
